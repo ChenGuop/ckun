@@ -1,4 +1,8 @@
+server:
+  port: 8081
 dubbo:
-  registry:
-    protocol: spring-cloud
-    address: nacos://127.0.0.1:8848/?namespace=dubbo-namespace&username=pcs&password=Bmht@123
+  scan:
+    base-packages: com.ckun.dubbo.service
+  protocol:
+    name: dubbo
+    port: 11000

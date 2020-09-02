@@ -1,4 +1,4 @@
-package com.ckun.dubbo;
+package com.ckun.dubbo.service;
 
 import com.ckun.dubbo.dto.User;
 
@@ -14,4 +14,11 @@ public interface ProviderService {
      * @return
      */
     User findByUsername(String value);
+
+    /**
+     * sayHi
+     * @param name
+     * @return
+     */
+    String sayName(String name);
 }

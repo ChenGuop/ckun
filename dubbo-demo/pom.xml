@@ -17,6 +17,7 @@
 
     <properties>
         <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
+        <java.version>1.8</java.version>
 <!--        <dubbo.version>2.</dubbo.version>-->
     </properties>
 
