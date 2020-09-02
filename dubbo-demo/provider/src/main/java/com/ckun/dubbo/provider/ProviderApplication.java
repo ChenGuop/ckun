@@ -1,8 +1,8 @@
-package com.ckun.dubbo;
+package com.ckun.dubbo.provider;
 
-import com.ckun.dubbo.service.ProviderService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 
 /**
  * @author chen_guo_peng
@@ -11,6 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ProviderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ProviderService.class, args);
+        SpringApplication.run(ProviderApplication.class, args);
     }
 }

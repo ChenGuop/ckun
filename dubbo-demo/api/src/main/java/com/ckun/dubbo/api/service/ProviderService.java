@@ -1,6 +1,6 @@
-package com.ckun.dubbo.service;
+package com.ckun.dubbo.api.service;
 
-import com.ckun.dubbo.dto.User;
+import com.ckun.dubbo.api.dto.User;
 
 /**
  * @author chen_guo_peng

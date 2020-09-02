@@ -1,7 +1,7 @@
-package com.ckun.dubbo;
+package com.ckun.dubbo.consumer.service;
 
-import com.ckun.dubbo.dto.User;
-import com.ckun.dubbo.service.ProviderService;
+import com.ckun.dubbo.api.dto.User;
+import com.ckun.dubbo.api.service.ProviderService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

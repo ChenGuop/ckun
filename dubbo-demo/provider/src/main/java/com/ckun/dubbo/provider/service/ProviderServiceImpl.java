@@ -1,7 +1,8 @@
-package com.ckun.dubbo.service;
+package com.ckun.dubbo.provider.service;
 
 import com.alibaba.dubbo.rpc.RpcContext;
-import com.ckun.dubbo.dto.User;
+import com.ckun.dubbo.api.dto.User;
+import com.ckun.dubbo.api.service.ProviderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.apache.dubbo.config.annotation.Service;

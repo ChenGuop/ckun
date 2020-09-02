@@ -1,4 +1,4 @@
-package com.ckun.dubbo.dto;
+package com.ckun.dubbo.api.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
