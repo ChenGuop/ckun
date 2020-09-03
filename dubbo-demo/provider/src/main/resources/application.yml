@@ -2,7 +2,7 @@ server:
   port: 8081
 dubbo:
   scan:
-    base-packages: com.ckun.dubbo.service
+    base-packages: com.ckun.dubbo.provider.service
   protocol:
     name: dubbo
     port: 11000

@@ -17,14 +17,11 @@ public class ProviderServiceImpl implements ProviderService {
     @Value("${demo.service.name}")
     private String serviceName;
 
-    @Override
     public User findByUsername(String value) {
         log.info("ProviderServiceImpl===>value:{}", value);
         return new User(value, value.length());
     }
 
-    @Override
-    @Deprecated
     public String sayName(String name) {
         RpcContext rpcContext = RpcContext.getContext();
         return String.format("Service [name :%s , port : %d] %s(\"%s\") : Hello,%s",
