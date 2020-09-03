@@ -1,0 +1,44 @@
+#spring:
+#  application:
+#    name: ckun-dubbo-consumer
+#  profiles:
+#    active: development
+## -Dspring.profiles.active=development
+#
+#---
+## Development
+#spring:
+#  profiles: development
+#  cloud:
+#    nacos:
+#      config:
+#        namespace: ckun-namespace
+#        file-extension: yaml
+#        server-addr: 127.0.0.1:8848
+##        server-addr: 10.0.127.101:8848
+#        username: ckun
+#        password: ckun
+#
+#---
+## Test
+#spring:
+#  profiles: test
+#  cloud:
+#    nacos:
+#      config:
+#        namespace: ac0ae34f-24de-4193-93bc-d64b3f64538a
+#        file-extension: yaml
+#        server-addr: 10.1.127.100:8858
+#
+#---
+## Local
+#spring:
+#  profiles: local
+#  cloud:
+#    nacos:
+#      config:
+#        namespace: ckun-namespace
+#        file-extension: yaml
+#        server-addr: 127.0.0.1:8848
+#        username: ckun
+#        password: ckun

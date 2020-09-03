@@ -4,6 +4,7 @@ import com.ckun.dubbo.api.dto.User;
 import com.ckun.dubbo.api.service.ProviderService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,9 +13,9 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Slf4j
-@AllArgsConstructor
 public class ConsumerService {
-    private final ProviderService providerService;
+    @Reference(version = "1.0.0")
+    private ProviderService providerService;
 
     public User test(String name) {
         log.info("ConsumerService==>name:{}", name);

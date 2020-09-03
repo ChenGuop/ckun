@@ -1,15 +1,30 @@
+spring:
+  application:
+    name: ckun
+  profiles:
+    active: local
+  cloud:
+    nacos:
+      config:
+        enable: false
+        namespace: ckun-namespace
+        file-extension: yaml
+        server-addr: 127.0.0.1:8848
+        username: ckun
+        password: ckun
 
 server:
   port: 8082
-
 dubbo:
   registry:
     protocol: spring-cloud
-    address: nacos://127.0.0.1:8848/?namespace=dubbo-namespace&username=pcs&password=Bmht@123
-  scan:
-    base-packages: com.ckun.dubbo
-  protocol:
-    name: dubbo
-    port: 11001
+    address: nacos://127.0.0.1:8848/?namespace=dubbo-namespace&username=ckun&password=ckun
+
+#dubbo:
+#  scan:
+#    base-packages: com.ckun.dubbo.consumer.service
+#  protocol:
+#    name: dubbo
+#    port: 11001
 
 
