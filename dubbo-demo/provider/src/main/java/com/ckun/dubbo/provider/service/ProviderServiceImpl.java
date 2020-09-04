@@ -10,6 +10,8 @@ import org.apache.dubbo.config.annotation.Service;
 /**
  * @author chen_guo_peng
  * @create 2020/9/1
+ *
+ * @Service version 对应 consumer 中 @Reference(version="")
  */
 @Service(version = "1.0.0")
 @Slf4j

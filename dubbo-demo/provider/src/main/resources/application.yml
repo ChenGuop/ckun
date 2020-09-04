@@ -1,5 +1,13 @@
+spring:
+  application:
+    name: ckun
+  profiles:
+    active: local
+
 server:
   port: 8081
+
+#  dubbo 扫描文件路径
 dubbo:
   scan:
     base-packages: com.ckun.dubbo.provider.service
